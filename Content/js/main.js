@@ -300,12 +300,11 @@ window.addEventListener('load', function(){
     typeText();
 });
 
-	<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MLM138KNXE');
+gtag('config', 'G-MLM138KNXE');
 
 }());
