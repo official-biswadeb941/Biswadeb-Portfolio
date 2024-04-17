@@ -252,7 +252,7 @@
 // Text to be typed in the preloader
 const textToType = [
     "Welcome to Biswadeb Mukherjee's Portfolio",
-    "Remember I'm not a Developer. I'm Ethical Hacker."
+    "Remember I'm not a Developer. I'm an Ethical Hacker."
 ];
 
 // Index of the current text being typed
