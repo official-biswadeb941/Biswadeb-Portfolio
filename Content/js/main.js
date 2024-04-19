@@ -262,7 +262,7 @@ let currentTextIndex = 0;
 let currentCharIndex = 0;
 
 // Speed of typing in milliseconds
-const typingSpeed = 100; // Adjust speed as needed
+const typingSpeed = 40; // Adjust speed as needed
 
 // Function to simulate typing effect
 function typeText() {
@@ -300,11 +300,14 @@ window.addEventListener('load', function(){
     typeText();
 });
 
-<!-- Google tag (gtag.js) -->
+//Google tag (gtag.js)
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-MLM138KNXE');
+
+
+
 
 }());
