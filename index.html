@@ -97,609 +97,770 @@
 	
 </head>
 
+<style>
+	.button-container {
+		background: linear-gradient(45deg, #0f0f0f, #333);
+		border-radius: 15px;
+		display: flex;
+		padding: 15px 20px;
+		width: fit-content;
+		cursor: pointer;
+		box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
+		transition: transform 0.3s, box-shadow 0.3s;
+		border: 2px solid #00ff00;
+		margin: 0 auto; /* Center the button */
+		margin-bottom: 100px;
+	}
+	.button-container:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 6px 12px rgba(0, 255, 0, 0.5);
+	}
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 15px;
+		justify-content: center;
+	}
+	.logo-container {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3);
+	}
+	.secondary-logo-container {
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+	}
+	.pay-now-text {
+		font-family: 'Courier New', monospace;
+		color: #00ff00;
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	.powered-by-text {
+		font-family: 'Courier New', monospace;
+		color: #00ff00;
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+	}
+	.powered-by-text span {
+		margin-right: 5px;
+	}
+	a {
+		text-decoration: none;
+	}
+</style>
+	<body>
 
-<body>
+		<div class="preloader" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/150/76/890/anonymous-computer-hacker-legion-wallpaper-preview.jpg);">
 
-	<div class="preloader" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/150/76/890/anonymous-computer-hacker-legion-wallpaper-preview.jpg);">
-
-		<div class="hacker-loader">
-		  <div class="matrix">
-			<!-- Create matrix rain effect using pseudo-elements -->
-			<div class="loader-text"></div>
-	
-		  </div>
-		  </div>
-	  </div>
-	
-
-	  <div class="topnav" id="myTopnav">
-		<a href="index.html" class="active"><img width="32" height="32" src="https://img.icons8.com/3d-fluency/32/home.png" alt="home"/><b> Home</b></a>
-		<a href="Terms&Policies.html"><img width="32" height="32" src="https://img.icons8.com/color/32/terms-and-conditions.png" alt="terms-and-conditions"/><b> Terms & Policies</b></a>
-		<a href="Privacy.html"><img width="32" height="32" src="https://img.icons8.com/color/32/privacy.png" alt="privacy"/><b> Privacy & Legal</b></a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		  <i class="fa fa-bars"></i>
-		</a>
-	  </div>
-<div id="content">
-
-
-	<div id="page">
-		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(https://cdn.pixabay.com/photo/2016/06/09/17/45/hacker-1446193_1280.jpg);" data-stellar-background-ratio="0.5">
-		    <div class="overlay"></div>
-		    <div class="container" itemscope itemtype="https://schema.org/Person">
-		        <div class="row">
-		            <div class="col-md-8 col-md-offset-2 text-center">
-		                <div class="display-t js-fullheight">
-		                    <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-		                        <div class="profile-thumb" style="background: url(https://avatars.githubusercontent.com/u/65611656?v=4);">
-		                        </div>
-		                        <h1 style="color: #00FF00;"><span itemprop="name">Biswadeb Mukherjee</span></h1>
-		                        <h3 style="color: #00FF00;"><span itemprop="jobTitle">Cyber Security Enthusiast / Red Teamer</span></h3>
-		                        <p>
-					<ul class="fh5co-social-icons" itemscope itemtype="https://schema.org/Organization">
-					    <li itemprop="sameAs" content="https://twitter.com/Biswadeb941"><a href="https://twitter.com/Biswadeb941"><i class="icon-twitter2"></i></a></li>
-					    <li itemprop="sameAs" content="https://www.facebook.com/official.biswadeb941"><a href="https://www.facebook.com/official.biswadeb941"><i class="icon-facebook2"></i></a></li>
-					    <li itemprop="sameAs" content="https://www.linkedin.com/in/biswadeb-mukherjee/"><a href="https://www.linkedin.com/in/biswadeb-mukherjee/"><i class="icon-linkedin2"></i></a></li>
-					    <li itemprop="sameAs" content="https://github.com/official-biswadeb941"><a href="https://github.com/official-biswadeb941"><i class="icon-github"></i></a></li>
-					</ul>
-		                        </p>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</header>
-
-
-
-		<div id="fh5co-about" class="animate-box" style="background-image: url(https://wallpaperset.com/w/full/0/6/9/228316.jpg)" data-stellar-background-ratio="0.5">
-			<div class="container" style="background-color:#000000;">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" itemscope itemtype="https://schema.org/Person">
-						<h2 style="color: #00FF00;">About Me</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-				            <ul class="info">
-				                <li><span class="first-block" style="color: #00FF00;">Full Name:</span><span itemprop="name" class="second-block" style="color: #00FF00;">Biswadeb Mukherjee</span></li>
-				                <li><span class="first-block" style="color: #00FF00;">Phone:</span><span itemprop="telephone" class="second-block" style="color: #00FF00;">+91 9836763466</span></li>
-				                <li><span class="first-block" style="color: #00FF00;">Email:</span><span itemprop="email" class="second-block" style="color: #00FF00;">official.biswadeb941@gmail.com</span></li>
-				                <li><span class="first-block" style="color: #00FF00;">Website:</span><span itemprop="url" class="second-block" style="color: #00FF00;">https://official-biswadeb941.github.io/Biswadeb-Portfolio/</span></li>
-				                <li><span class="first-block" style="color: #00FF00;">Address:</span><span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="second-block" style="color: #00FF00;"><span itemprop="addressLocality">Sodepur</span>, <span itemprop="addressRegion">Kolkata</span></span></li>
-				            </ul>
-					</div>
-					<div class="col-md-8">
-						<h2 style="color: #00FF00;">Hello There!</h2>
-						<p style="color: #00FF00;">Passionate about cybersecurity, I am committed to strengthening digital defenses through a
-							combination of technical prowess and ethical integrity. With a background in conducting
-							penetration tests and assessing vulnerabilities, my focus lies in proactively detecting and
-							neutralizing cyber threats.</p>
-						<p style="color: #00FF00;">A collaborative team player, I actively cultivate alliances to promote a culture of
-							cybersecurity readiness. Skilled in Python programming and well-versed in crafting malware,
-							I am dedicated to honing my abilities to ensure the utmost protection of digital resources
-							with unwavering professionalism and integrity.</p>
-							<ul class="fh5co-social-icons" itemscope itemtype="https://schema.org/Organization">
-							    <li itemprop="sameAs" content="https://twitter.com/Biswadeb941"><a href="https://twitter.com/Biswadeb941"><i class="icon-twitter2"></i></a></li>
-							    <li itemprop="sameAs" content="https://www.facebook.com/official.biswadeb941"><a href="https://www.facebook.com/official.biswadeb941"><i class="icon-facebook2"></i></a></li>
-							    <li itemprop="sameAs" content="https://www.linkedin.com/in/biswadeb-mukherjee/"><a href="https://www.linkedin.com/in/biswadeb-mukherjee/"><i class="icon-linkedin2"></i></a></li>
-							    <li itemprop="sameAs" content="https://github.com/official-biswadeb941"><a href="https://github.com/official-biswadeb941"><i class="icon-github"></i></a></li>
-							</ul>
-					</div>
-				</div>
+			<!-- Preloader -->
+			<div class="hacker-loader">
+			<div class="matrix">
+				<div class="loader-text"></div>
+			</div>
 			</div>
 		</div>
 		
-		<div id="fh5co-resume" class="fh5co-bg-color" style="background-image: url(https://wallpaperset.com/w/full/b/e/c/228353.jpg)" data-stellar-background-ratio="0.5">
-		    <div class="container" style="background-color:#000000;" itemscope itemtype="https://schema.org/Person">
-		        <div class="row animate-box">
-		            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-		                <h2 style="color: #00FF00;" itemprop="name">My Resume</h2>
-		            </div>
-		        </div>
-		
-		        <div class="row">
-		            <div class="col-md-12 col-md-offset-0">
-		                <ul class="timeline">
-		                    <li class="timeline-heading text-center animate-box">
-		                        <div>
-		                            <h3 style="color: #00FF00;">Education</h3>
-		                        </div>
-		                    </li>
-		                    <li class="animate-box timeline-unverted" itemscope itemtype="http://schema.org/EducationalOrganization">
-		                        <div class="timeline-badge" style="color: #00FF00; background-color: black;"><i class="icon-graduation-cap"></i></div>
-		                        <div class="timeline-panel">
-		                            <div class="timeline-heading">
-		                                <h3 class="timeline-title" style="color: #00FF00;" itemprop="name">Bachelor of Computer Application</h3>
-		                                <span class="company" style="color: #00FF00;" itemprop="location">GuruNanak Institute Of Technology - <time datetime="2022">2022</time> - Current</span>
-		                            </div>
-		                            <div class="timeline-body">
-		                                <p style="color: #00FF00;" itemprop="description">Ask me about Python, full-stack Development, Wordpress, Elementor.</p>
-		                            </div>
-		                        </div>
-		                    </li>
-		                    <li class="timeline-inverted animate-box" itemscope itemtype="http://schema.org/EducationalOrganization">
-		                        <div class="timeline-badge" style="color: #00FF00; background-color: black;"><i class="icon-graduation-cap"></i></div>
-		                        <div class="timeline-panel">
-		                            <div class="timeline-heading">
-		                                <h3 class="timeline-title" style="color: #00FF00;" itemprop="alumni">ISC</h3>
-		                                <span class="company" style="color: #00FF00;" itemprop="location">St.Xavier's Institute - <time datetime="2020">2020</time> - 2022</span>
-		                            </div>
-		                            <div class="timeline-body">
-		                                <p style="color: #00FF00;" itemprop="description">Please don't ask me about Math. I hate it.</p>
-		                            </div>
-		                        </div>
-		                    </li>
-		                    <li class="animate-box timeline-unverted" itemscope itemtype="http://schema.org/EducationalOrganization">
-		                        <div class="timeline-badge" style="color: #00FF00; background-color: black;"><i class="icon-graduation-cap"></i></div>
-		                        <div class="timeline-panel">
-		                            <div class="timeline-heading">
-		                                <h3 class="timeline-title" style="color: #00FF00;" itemprop="alumni">ICSE</h3>
-		                                <span class="company" style="color: #00FF00;" itemprop="location">St.Xavier's Institute - <time datetime="2004">2004</time> - 2020</span>
-		                            </div>
-		                            <div class="timeline-body">
-		                                <p style="color: #00FF00;" itemprop="description">Please don't ask me about Math. I hate it.</p>
-		                            </div>
-		                        </div>
-		                    </li>
-		                </ul>
-		            </div>
-		        </div>
-		    </div>
+		<!-- TopNav Bar -->
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active"><img width="32" height="32" src="https://img.icons8.com/3d-fluency/32/home.png" alt="home"/><b> Home</b></a>
+			<a href="Terms&Policies.html"><img width="32" height="32" src="https://img.icons8.com/color/32/terms-and-conditions.png" alt="terms-and-conditions"/><b> Terms & Policies</b></a>
+			<a href="Privacy.html"><img width="32" height="32" src="https://img.icons8.com/color/32/privacy.png" alt="privacy"/><b> Privacy & Legal</b></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+			</a>
 		</div>
 
 
-		<div id="fh5co-features" class="animate-box" style="background-image: url(https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" data-stellar-background-ratio="0.5">
-			<div class="container" style="background-color:#000000;">
-				<div class="services-padding">
+		<div id="content">
+			<!-- Header -->
+			<div id="page">
+				<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(https://cdn.pixabay.com/photo/2016/06/09/17/45/hacker-1446193_1280.jpg);" data-stellar-background-ratio="0.5">
+					<div class="overlay"></div>
+					<div class="container" itemscope itemtype="https://schema.org/Person">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center">
+								<div class="display-t js-fullheight">
+									<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+										<div class="profile-thumb" style="background: url(https://avatars.githubusercontent.com/u/65611656?v=4);">
+										</div>
+										<h1 style="color: #00FF00;"><span itemprop="name">Biswadeb Mukherjee</span></h1>
+										<h3 style="color: #00FF00;"><span itemprop="jobTitle">Cyber Security Enthusiast / Red Teamer</span></h3>
+										<p>
+							<ul class="fh5co-social-icons" itemscope itemtype="https://schema.org/Organization">
+								<li itemprop="sameAs" content="https://twitter.com/Biswadeb941"><a href="https://twitter.com/Biswadeb941"><i class="icon-twitter2"></i></a></li>
+								<li itemprop="sameAs" content="https://www.facebook.com/official.biswadeb941"><a href="https://www.facebook.com/official.biswadeb941"><i class="icon-facebook2"></i></a></li>
+								<li itemprop="sameAs" content="https://www.linkedin.com/in/biswadeb-mukherjee/"><a href="https://www.linkedin.com/in/biswadeb-mukherjee/"><i class="icon-linkedin2"></i></a></li>
+								<li itemprop="sameAs" content="https://github.com/official-biswadeb941"><a href="https://github.com/official-biswadeb941"><i class="icon-github"></i></a></li>
+							</ul>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<!-- About Me -->
+				<div id="fh5co-about" class="animate-box" style="background-image: url(https://wallpaperset.com/w/full/0/6/9/228316.jpg)" data-stellar-background-ratio="0.5">
+					<div class="container" style="background-color:#000000;">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" itemscope itemtype="https://schema.org/Person">
+								<h2 style="color: #00FF00;"><u>About Me</u></h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+									<ul class="info">
+										<li><span class="first-block" style="color: #00FF00;">Full Name:</span><span itemprop="name" class="second-block" style="color: #00FF00;">Biswadeb Mukherjee</span></li>
+										<li><span class="first-block" style="color: #00FF00;">Phone:</span><span itemprop="telephone" class="second-block" style="color: #00FF00;">+91 9836763466</span></li>
+										<li><span class="first-block" style="color: #00FF00;">Email:</span><span itemprop="email" class="second-block" style="color: #00FF00;">official.biswadeb941@gmail.com</span></li>
+										<li><span class="first-block" style="color: #00FF00;">Website:</span><span itemprop="url" class="second-block" style="color: #00FF00;">https://official-biswadeb941.github.io/Biswadeb-Portfolio/</span></li>
+										<li><span class="first-block" style="color: #00FF00;">Address:</span><span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="second-block" style="color: #00FF00;"><span itemprop="addressLocality">Sodepur</span>, <span itemprop="addressRegion">Kolkata</span></span></li>
+									</ul>
+							</div>
+							<div class="col-md-8">
+								<h2 style="color: #00FF00;">Hello There!</h2>
+								<p style="color: #00FF00;">Passionate about cybersecurity, I am committed to strengthening digital defenses through a
+									combination of technical prowess and ethical integrity. With a background in conducting
+									penetration tests and assessing vulnerabilities, my focus lies in proactively detecting and
+									neutralizing cyber threats.</p>
+								<p style="color: #00FF00;">A collaborative team player, I actively cultivate alliances to promote a culture of
+									cybersecurity readiness. Skilled in Python programming and well-versed in crafting malware,
+									I am dedicated to honing my abilities to ensure the utmost protection of digital resources
+									with unwavering professionalism and integrity.</p>
+									<ul class="fh5co-social-icons" itemscope itemtype="https://schema.org/Organization">
+										<li itemprop="sameAs" content="https://twitter.com/Biswadeb941"><a href="https://twitter.com/Biswadeb941"><i class="icon-twitter2"></i></a></li>
+										<li itemprop="sameAs" content="https://www.facebook.com/official.biswadeb941"><a href="https://www.facebook.com/official.biswadeb941"><i class="icon-facebook2"></i></a></li>
+										<li itemprop="sameAs" content="https://www.linkedin.com/in/biswadeb-mukherjee/"><a href="https://www.linkedin.com/in/biswadeb-mukherjee/"><i class="icon-linkedin2"></i></a></li>
+										<li itemprop="sameAs" content="https://github.com/official-biswadeb941"><a href="https://github.com/official-biswadeb941"><i class="icon-github"></i></a></li>
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- My Resume -->
+				<div id="fh5co-resume" class="fh5co-bg-color" style="background-image: url(https://wallpaperset.com/w/full/b/e/c/228353.jpg)" data-stellar-background-ratio="0.5">
+					<div class="container" style="background-color:#000000;" itemscope itemtype="https://schema.org/Person">
+						<div class="row animate-box">
+							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+								<h2 style="color: #00FF00;" itemprop="name"><u>My Resume</u></h2>
+							</div>
+						</div>
+				
+						<div class="row">
+							<div class="col-md-12 col-md-offset-0">
+								<ul class="timeline">
+									<li class="timeline-heading text-center animate-box">
+										<div>
+											<h3 style="color: #00FF00;">Education</h3>
+										</div>
+									</li>
+									<li class="animate-box timeline-unverted" itemscope itemtype="http://schema.org/EducationalOrganization">
+										<div class="timeline-badge" style="color: #00FF00; background-color: black;"><i class="icon-graduation-cap"></i></div>
+										<div class="timeline-panel">
+											<div class="timeline-heading">
+												<h3 class="timeline-title" style="color: #00FF00;" itemprop="name">Bachelor of Computer Application</h3>
+												<span class="company" style="color: #00FF00;" itemprop="location">GuruNanak Institute Of Technology - <time datetime="2022">2022</time> - Current</span>
+											</div>
+											<div class="timeline-body">
+												<p style="color: #00FF00;" itemprop="description">Ask me about Python, full-stack Development, Wordpress, Elementor.</p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline-inverted animate-box" itemscope itemtype="http://schema.org/EducationalOrganization">
+										<div class="timeline-badge" style="color: #00FF00; background-color: black;"><i class="icon-graduation-cap"></i></div>
+										<div class="timeline-panel">
+											<div class="timeline-heading">
+												<h3 class="timeline-title" style="color: #00FF00;" itemprop="alumni">ISC</h3>
+												<span class="company" style="color: #00FF00;" itemprop="location">St.Xavier's Institute - <time datetime="2020">2020</time> - 2022</span>
+											</div>
+											<div class="timeline-body">
+												<p style="color: #00FF00;" itemprop="description">Please don't ask me about Math. I hate it.</p>
+											</div>
+										</div>
+									</li>
+									<li class="animate-box timeline-unverted" itemscope itemtype="http://schema.org/EducationalOrganization">
+										<div class="timeline-badge" style="color: #00FF00; background-color: black;"><i class="icon-graduation-cap"></i></div>
+										<div class="timeline-panel">
+											<div class="timeline-heading">
+												<h3 class="timeline-title" style="color: #00FF00;" itemprop="alumni">ICSE</h3>
+												<span class="company" style="color: #00FF00;" itemprop="location">St.Xavier's Institute - <time datetime="2004">2004</time> - 2020</span>
+											</div>
+											<div class="timeline-body">
+												<p style="color: #00FF00;" itemprop="description">Please don't ask me about Math. I hate it.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Skills -->
+			<div id="fh5co-skills" class="animate-box" style="background-image: url(https://r4.wallpaperflare.com/wallpaper/762/790/328/hacking-hackers-wallpaper-b9d0a83d215a8dcb76b7b85fe0e1a68d.jpg)" data-stellar-background-ratio="0.5">
+				<div class="container" style="background-color:#000000;">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2 style="color: #00FF00;">Our Startup</h2>
-							<h2 style="color: #00FF00;">ParseSphere Innovation</h2>
-							<p style="color: #00FF00;">
-								Welcome to ParseSphere Innovations, a cloud-based startup where innovation meets
-								collaboration.
-								Spearheaded by lead developer Biswadeb Mukherjee and managed by finance and management
-								partner Doeta Das,
-								ParseSphere is more than just a business venture; it's the culmination of a friendship
-								evolving into a dynamic partnership.
-								With our tagline, 'Crafting Today, Empowering Tomorrow,' we specialize in web designing,
-								web/software development, and digital marketing.
-								Our combined expertise ensures seamless technical solutions and unparalleled client
-								satisfaction, strengthening both friendships and business endeavors alike.
-							</p>
-							<br>
-							<h2 style="color: #00FF00;">Our Services</h2>
+							<h2 style="color: #00FF00;"><u>Skills</u></h2>
 						</div>
 					</div>
+					<div class="row row-pb-md" style="color: #00FF00;">
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center" >
+							<div class="chart" data-percent="95"><span><strong>HTML5/CSS3</strong>95%</span></div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="90"><span><strong>javascript</strong>60%</span></div>
+						</div>
 
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="89"><span><strong>Python</strong>90%</span></div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="90"><span><strong>Burpsuit</strong>70%</span></div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="85"><span><strong>Hydra</strong>85%</span></div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="90"><span><strong>Information Gathering &
+										Analysing</strong>90%</span></div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="93"><span><strong>NMAP</strong>93%</span></div>
+						</div>
+					</div>
 					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon"><i class="icon-shield"></i></span>
-								<div class="feature-copy">
-									<h3 style="color: #00FF00;">Reliable Hosting</h3>
-									<p style="color: #00FF00;"><b>Stable hosting ensuring your website is always up.</b></p>
+						<div class="col-md-6">
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">HTML5/CSS3/Javascript</span><span class="value-right">77.5%</span>
+								</h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+										aria-valuenow="77.5" aria-valuemin="0" aria-valuemax="100" style="width:77.5%">
+									</div>
+								</div>
+							</div>
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">WordPress/Elementor</span><span class="value-right">95%</span></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+										aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+									</div>
+								</div>
+							</div>
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">Python</span><span class="value-right">90%</span></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+										aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+									</div>
+								</div>
+							</div>
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">Mysql</span><span class="value-right">85%</span></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+										aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">Burpsuit</span><span class="value-right">70%</span></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+										aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+									</div>
+								</div>
+							</div>
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">Hydra</span><span class="value-right">85%</span></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85"
+										aria-valuemin="0" aria-valuemax="100" style="width:85%">
+									</div>
+								</div>
+							</div>
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">Information Gathering & Analysing</span><span
+										class="value-right">90%</span></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+										aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+									</div>
+								</div>
+							</div>
+							<div class="progress-wrap">
+								<h3 style="color: #00FF00;"><span class="name-left">NMAP</span><span class="value-right">93%</span></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+										aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width:93%">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Projects -->
+			<div id="fh5co-work" style="background-image: url(https://wallpapercave.com/wp/wp4005879.jpg)" data-stellar-background-ratio="0.5">
+				<div class="container" style="background-color: #000000;">
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center">
+							<h1 style="color:#00FF00;"><u>Projects</u></h1>
+						</div>
+					</div>
+						<div class="row">
+							<div class="col-md-3 text-center col-padding animate-box" itemscope itemtype="https://schema.org/CreativeWork">
+								<a href="https://github.com/official-biswadeb941/Mayabati---Your-Personal-AI-Chef" class="work" style="background-image: url(https://github.com/official-biswadeb941/Mayabati---Your-Personal-AI-Chef/raw/master/static/Image/Bot.jpg);">
+									<div class="desc">
+										<h3 itemprop="name">Mayabati - Your AI Chef</h3>
+										<span itemprop="description">Illustration</span>
+									</div>
+								</a>
+							</div>
+						<div class="col-md-3 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Content/images/portfolio-2.jpg);">
+								<div class="desc">
+									<h3>More Interesting Projects Coming in Future.</h3>
+									<span>Illustration</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Content/images/portfolio-3.jpg);">
+								<div class="desc">
+									<h3>More Interesting Projects Coming in Future.</h3>
+									<span>Illustration</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Content/images/portfolio-4.jpg);">
+								<div class="desc">
+									<h3>More Interesting Projects Coming in Future.</h3>
+									<span>Illustration</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Content/images/portfolio-5.jpg);">
+								<div class="desc">
+									<h3>More Interesting Projects Coming in Future.</h3>
+									<span>Illustration</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Content/images/portfolio-6.jpg);">
+								<div class="desc">
+									<h3>More Interesting Projects Coming in Future.</h3>
+									<span>Illustration</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Content/images/portfolio-7.jpg);">
+								<div class="desc">
+									<h3>More Interesting Projects Coming in Future.</h3>
+									<span>Illustration</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 text-center col-padding animate-box">
+							<a href="#" class="work" style="background-image: url(Content/images/portfolio-8.jpg);">
+								<div class="desc">
+									<h3>More Interesting Projects Coming in Future.</h3>
+									<span>Illustration</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Photo Album -->
+					<div id="fh5co-blog" itemscope itemtype="https://schema.org/ImageGallery" style="background-image: url(https://wallpapercave.com/wp/wp4795301.png);">
+						<div class="container" style="background-color:#000000;">
+							<div class="row animate-box">
+								<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+									<h2 style="color: #00FF00;" itemprop="name"><u>Photo Album</u></h2>
+									<p> </p>
+								</div>
+							</div>
+							<div class="row">
+								<!-- First post -->
+								<div class="col-md-4">
+									<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
+										<a href="https://www.facebook.com/official.biswadeb941" class="blog-bg" style="background-image: url(Content/images/ECS.jpg);" itemprop="url"></a>
+										<div class="blog-text">
+											<span class="posted_on">April. 10th 2024</span>
+											<h3 itemprop="headline">Gurunanak Institute of Technology's ECS Department organized a seminar with Prof. Dr. Himadri Nath Saha on Ethical Hacking, offering key insights on cybersecurity measures.</h3>
+											<p itemprop="author">Red Teamer</p>
+										</div>
+									</div>
+								</div>
+								<!-- Second post -->
+								<div class="col-md-4">
+									<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
+										<a href="https://www.facebook.com/official.biswadeb941" class="blog-bg" style="background-image: url(Content/images/Cyber1.jpg);" itemprop="url"></a>
+										<div class="blog-text">
+											<span class="posted_on">March. 14th 2024</span>
+											<h3 itemprop="headline">We the Cyber Cell team with our guest speaker Mr Shuvam Roy.😍🤭 </h3>
+											<p itemprop="author">Red Teamer</p>
+										</div>
+									</div>
+								</div>
+								<!-- Third post -->
+								<div class="col-md-4">
+									<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
+										<a href="https://www.facebook.com/official.biswadeb941" class="blog-bg" style="background-image: url(Content/images/cyber2.jpg);" itemprop="url"></a>
+										<div class="blog-text">
+											<span class="posted_on">March. 14th 2024</span>
+											<h3 itemprop="headline">Joined GNIT Cyber Cell as a Technical Engineer.</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Post on Medium -->
+						<div id="fh5co-blog" itemscope itemtype="https://schema.org/Blog" style="background-image: url(https://wallpapercave.com/wp/wp6241750.png);">
+							<div class="container" style="background-color:#000000;">
+								<div class="row animate-box">
+									<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+										<h1 style="color: #00FF00;" itemprop="name"><u>Post on Medium</u></h1>
+										<h3 style="color: #00FF00;">My Top 3 Articles</h3>
+									</div>
+								</div>
+								<div class="row">
+									<!-- First post -->
+									<div class="col-md-4">
+										<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/BlogPosting">
+											<a href="https://medium.com/@official-biswadeb941/the-world-of-me-bestie-computer-traveling-fooding-sleeping-04f8a1c58db7" class="blog-bg" style="background-image: url(https://www.wondermind.com/wp-content/uploads/2023/04/How-to-practice-self-love.png?w=960);" itemprop="url"></a>
+											<div class="blog-text">
+												<span class="posted_on">April. 11th 2024</span>
+												<h3 itemprop="headline"><a href="https://medium.com/@official-biswadeb941/the-world-of-me-bestie-computer-traveling-fooding-sleeping-04f8a1c58db7">The World Of ME: Bestie, Computer, Travelling, Fooding, Sleeping.</a></h3>
+												<p itemprop="description">Read my Autobiography</p>
+												<ul class="stuff">
+													<li><a href="https://medium.com/@official-biswadeb941/the-world-of-me-bestie-computer-traveling-fooding-sleeping-04f8a1c58db7">Read More<i class="icon-arrow-right22"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- Second post -->
+									<div class="col-md-4">
+										<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/BlogPosting">
+											<a href="#" class="blog-bg" style="background-image: url(Content/images/portfolio-2.jpg);" itemprop="url"></a>
+											<div class="blog-text">
+												<span class="posted_on">Mar. 15th 2016</span>
+												<h3 itemprop="headline"><a href="#">More Article are coming.</a></h3>
+												<p itemprop="description">More Article are coming.</p>
+											</div>
+										</div>
+									</div>
+									<!-- Third post -->
+									<div class="col-md-4">
+										<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/BlogPosting">
+											<a href="#" class="blog-bg" style="background-image: url(Content/images/portfolio-3.jpg);" itemprop="url"></a>
+											<div class="blog-text">
+												<span class="posted_on">Mar. 15th 2016</span>
+												<h3 itemprop="headline"><a href="#">More Article are coming.</a></h3>
+												<p itemprop="description">More Article are coming.</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon"><i class="icon-laptop"></i></span>
-								<div class="feature-copy">
-									<h3 style="color: #00FF00;">Web Designing</h3>
-									<p style="color: #00FF00;"><b>user-friendly designs tailored to your brand.</b></p>
+						<!-- Our Startup -->
+						<div id="fh5co-features" class="animate-box" style="background-image: url(https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" data-stellar-background-ratio="0.5">
+							<div class="container" style="background-color:#000000;">
+								<div class="services-padding">
+									<div class="row">
+										<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+											<h2 style="color: #00FF00;"><u>Our Startup</u></h2>
+											<h2 style="color: #00FF00;">ParseSphere Innovation</h2>
+											<p style="color: #00FF00;">
+												Welcome to ParseSphere Innovations, a cloud-based startup where innovation meets
+												collaboration.
+												Spearheaded by lead developer Biswadeb Mukherjee and managed by finance and management
+												partner Doeta Das,
+												ParseSphere is more than just a business venture; it's the culmination of a friendship
+												evolving into a dynamic partnership.
+												With our tagline, 'Crafting Today, Empowering Tomorrow,' we specialize in web designing,
+												web/software development, and digital marketing.
+												Our combined expertise ensures seamless technical solutions and unparalleled client
+												satisfaction, strengthening both friendships and business endeavors alike.
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+											<h2 style="color: #00FF00;"><u>Our Motto & Vision</u></h2>
+											<p style="color: #00FF00;">
+												Our vision is to become the leading cloud company, delivering exceptional service and high-quality products. 
+												We are committed to providing outstanding customer service and creating job opportunities for every Indian, ensuring that no one suffers from hunger or poverty. 
+												We strive to uplift every individual, eliminating poverty and enhancing the quality of life.
+											</p>
+										</div>
+									</div>
+									
+										
+									<div class="row">	
+									<h2 style="color: #00FF00;text-align: center;"><u>Our Services</u></h2>
+									<br>
+										<div class="col-md-4 text-center">
+											<div class="feature-left">
+												<span class="icon"><i class="icon-shield"></i></span>
+												<div class="feature-copy">
+													<h3 style="color: #00FF00;">Reliable Hosting</h3>
+													<p style="color: #00FF00;"><b>Stable hosting ensuring your website is always up.</b></p>
+												</div>
+											</div>
+										</div>
+				
+										<div class="col-md-4 text-center">
+											<div class="feature-left">
+												<span class="icon"><i class="icon-laptop"></i></span>
+												<div class="feature-copy">
+													<h3 style="color: #00FF00;">Web Designing</h3>
+													<p style="color: #00FF00;"><b>user-friendly designs tailored to your brand.</b></p>
+												</div>
+											</div>
+										</div>
+				
+										<div class="col-md-4 text-center">
+											<div class="feature-left">
+												<span class="icon"><i class="icon-code"></i></span>
+												<div class="feature-copy">
+													<h3 style="color: #00FF00;">Web Development</h3>
+													<p style="color: #00FF00;"><b>Custom solutions to unlock your online potential.</b></p>
+												</div>
+											</div>
+										</div>
+									</div>
+				
+									<div class="row">
+										<div class="col-md-4 text-center">
+											<div class="feature-left">
+												<span class="icon"><i class="icon-target"></i></span>
+												<div class="feature-copy">
+													<h3 style="color: #00FF00;">Digital Marketing</h3>
+													<p style="color: #00FF00;"><b>Maximize online reach with tailored strategies.</b></p>
+												</div>
+											</div>
+										</div>
+				
+										<div class="col-md-4 text-center">
+											<div class="feature-left">
+												<span class="icon"><i class="icon-tools"></i></span>
+												<div class="feature-copy">
+													<h3 style="color: #00FF00;">Support</h3>
+													<p style="color: #00FF00;"><b>Dedicated assistance for smooth online operations.</b></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<br>
+									<h4><a href="https://www.picktime.com/c48f6d18-ea94-4b76-ab68-bf2a6d8d5a8a" class="ptbkbtn" target="_blank" style="display: block; text-align: center;"><b><u>Book an Appointment with Us.</u></b></a></h4>
+									<h4 style="color: #00FF00; text-align: center;"><b>Choose a time that suits you, and we will confirm your appointment as soon as possible.</b></h4>
 								</div>
 							</div>
 						</div>
+					</div>
+				
+					<!-- Accepting Donation -->
+						<div id="fh5co-blog" itemscope itemtype="https://schema.org/ImageGallery" style="background-image: url(https://static.toiimg.com/thumb/msid-94921710,width-1280,height-720,resizemode-4/94921710.jpg);">
+							<div class="container" style="background-color:#000000; width: 80%;">
+								<div class="row animate-box">
+									<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+											<div class="letter-header" style="background-color: white;">
+												<h1 style="color: black;"><b><u>Donate Us</u></b></h1>
+												<div class="letter-body">
+													<p style="text-align: left; color: black;"><b>
+														Dear Valued Supporters/Viewers,
+													</b></p>
+												<p style="text-align: left; color: black;"><b>We are immensely grateful for your interest in supporting ParseSphere Innovations. Your generosity fuels our passion for innovation and enables us to make a meaningful impact in the world.
+														At ParseSphere Innovations, we are dedicated to creating cutting-edge software solutions that drive positive change.
+													</b>	
+													</p>
+													<p style="text-align: left; color: black;"><b>Your donations play a crucial role in keeping our projects running and live, allowing us to continue our mission of innovation and progress.
+														We are proud to share that 1% of overall contributions received will be directed towards NGOs, supporting those in need with essentials like clothes, food, sanitary pads, and more.
+													</b>	
+													</p>
+													<p style="text-align: left; color: black;"><b>By donating to us, you're not just investing in technology; you're also making a difference in the lives of those less fortunate.
+														Join us in accelerating innovation, supporting our vibrant community of creators, and shaping a future powered by technology. Together, we can empower innovation and transform lives.
+													</b>	
+													</p>
+													<p style="text-align: left; color: black;"><b>Please note: Before proceeding with your donation, we kindly ask you to read and understand the Donation Specific <a href="Donations.html">"Terms and Conditions"</a>. These terms ensure transparency and provide important information about how your contributions will be used.
+													</b>	
+													</p>
+													<p style="text-align: left; color: black;"><b>
+																	Sincerely,<br>
+																	ParseSphere Innovations.
+																	<br>
+																	17 May, 2024.</b>
 
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon"><i class="icon-code"></i></span>
-								<div class="feature-copy">
-									<h3 style="color: #00FF00;">Web Development</h3>
-									<p style="color: #00FF00;"><b>Custom solutions to unlock your online potential.</b></p>
+													</p>
+												</div>
+											</div>
+									</div>
+								</div>
+								<div class="row text-center">
+									<form>
+										<a href="https://payments.cashfree.com/forms/Donate_us" target="_parent">
+											<div class="button-container">
+												<div>
+													<img src="https://cashfree-checkoutcartimages-prod.cashfree.com/ParseSphere_LOGO_Circlep6nuhvej5hrg_prod.png" alt="logo" class="logo-container">
+												</div>
+												<div class="text-container">
+													<div class="pay-now-text">
+														Pay Now
+													</div>
+													<div class="powered-by-text">
+														<span>Powered By Cashfree</span>
+														<img src="https://cashfreelogo.cashfree.com/cashfreepayments/logosvgs/Group_4355.svg" alt="logo" class="secondary-logo-container">
+													</div>
+												</div>
+											</div>
+										</a>
+									</form>
+								</div>
+							</div>
+						</div>
+						
+
+				<!-- Photo Album -->
+				<div id="fh5co-blog" itemscope itemtype="https://schema.org/ImageGallery" style="background-image: url(https://wallpapercave.com/wp/wp4795301.png);">
+					<div class="container" style="background-color:#000000;">
+						<div class="row animate-box">
+							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+								<h2 style="color: #00FF00;" itemprop="name"><u>Our Most Trusted Partners</u></h2>
+								<p> </p>
+							</div>
+						</div>
+						<div class="row">
+							<!-- First Partner -->
+							<div class="col-md-4">
+								<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
+									<a href="https://merchant.cashfree.com/merchants/signup?referrer=partner&refCode=CFPPE270661"><img src="https://cashfreelogo.cashfree.com/All-Partner-Collateral/Cashfree-Partner-Certificate-Logo.png" alt="" width="70%" height="60%"></a>
+								</div>
+							</div>
+							<!-- Second Partner -->
+							<div class="col-md-4">
+								<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
+									<a href="https://hostinger.in?REFERRALCODE=1BISWADEB08"><img src="Content/images/Hostinger.png" alt="" width="70%" height="60%"></a>
+								</div>
+							</div>
+							<!-- Third Partner -->
+							<div class="col-md-4">
+								<div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
+									<a href=" " class="blog-bg" style="background-image: url(Content/images/);" itemprop="url"></a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon"><i class="icon-target"></i></span>
-								<div class="feature-copy">
-									<h3 style="color: #00FF00;">Digital Marketing</h3>
-									<p style="color: #00FF00;"><b>Maximize online reach with tailored strategies.</b></p>
+				<!-- Contact Us Form -->
+				<div id="fh5co-consult">
+					<div class="video fh5co-video" style="background-image: url(https://images.pexels.com/photos/3794382/pexels-photo-3794382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+						<div class="overlay"></div>
+					</div>
+					<div class="choose animate-box" style="background-color: #000000;">
+						<h2 style="color: #00FF00;"><b><u>Contact us</u></b></h2>
+						<form id="contactForm" method="post">
+							<p style="color: #00FF00;">Fill up the form given below and we will get back to you very soon.</p>
+							<div class="row form-group">
+							<!-- Name Box-->
+								<div class="col-md-6" style="color: #00FF00;">
+									<input type="text" id="name" name="name" class="form-control" placeholder="Your Full Name" autocomplete="off" required>
 								</div>
 							</div>
-						</div>
-
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon"><i class="icon-tools"></i></span>
-								<div class="feature-copy">
-									<h3 style="color: #00FF00;">Support</h3>
-									<p style="color: #00FF00;"><b>Dedicated assistance for smooth online operations.</b></p>
+							<!-- Email Box -->
+							<div class="row form-group">
+								<div class="col-md-12">
+									<input type="text" id="email" name="email" class="form-control" placeholder="Your Email Address" autocomplete="off" required>
 								</div>
 							</div>
-						</div>
+							<!-- Subject Box -->
+							<div class="row form-group">
+								<div class="col-md-12">
+									<input type="text" id="subject" name="subject" class="form-control" placeholder="Your subject of this message" autocomplete="off" required>
+								</div>
+							</div>
+							<!-- Message Box -->
+							<div class="row form-group">
+								<div class="col-md-12">
+									<textarea name="message" id="message" name="message" cols="30" rows="10" class="form-control" placeholder="Something which you want to say us" autocomplete="off" required></textarea>
+								</div>
+							</div>
+							<!-- Send Button -->
+							<div class="form-group">
+								<input type="submit" value="Send Message" class="btn btn-primary">
+							</div>
+							<div id="messageArea" style="color: #fffb00;"></div>
+						</form>
 					</div>
-					<br>
-					<a href="https://www.picktime.com/c48f6d18-ea94-4b76-ab68-bf2a6d8d5a8a" class="ptbkbtn" target="_blank" style="display: block; text-align: center;"><b><u>Book an Appointment with Us.</u></b></a>
-                    <p style="color: #00FF00; text-align: center;"><b>Choose a time that suits you, and we will confirm your appointment as soon as possible.</b></p>
 				</div>
-			</div>
+				
+				<!--
+				<div id="map" class="fh5co-map"></div>
+				</div>
+				-->
+
+				<div class="gototop js-top" >
+					<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+				</div>
 		</div>
-	</div>
 
-	<div id="fh5co-skills" class="animate-box" style="background-image: url(https://r4.wallpaperflare.com/wallpaper/762/790/328/hacking-hackers-wallpaper-b9d0a83d215a8dcb76b7b85fe0e1a68d.jpg)" data-stellar-background-ratio="0.5">
-		<div class="container" style="background-color:#000000;">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2 style="color: #00FF00;">Skills</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md" style="color: #00FF00;">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center" >
-					<div class="chart" data-percent="95"><span><strong>HTML5/CSS3</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>javascript</strong>60%</span></div>
-				</div>
+	<script src="Content/js/jquery.min.js"></script>
+	<script src="Content/js/jquery.easing.1.3.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/jquery.waypoints.min.js"></script>
+	<script src="Content/js/jquery.stellar.min.js"></script>
+	<script src="Content/js/jquery.easypiechart.min.js"></script>
+	<script src="Content/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MLM138KNXE"></script>
 
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="89"><span><strong>Python</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Burpsuit</strong>70%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>Hydra</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Information Gathering &
-								Analysing</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="93"><span><strong>NMAP</strong>93%</span></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">HTML5/CSS3/Javascript</span><span class="value-right">77.5%</span>
-						</h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-								aria-valuenow="77.5" aria-valuemin="0" aria-valuemax="100" style="width:77.5%">
-							</div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">WordPress/Elementor</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-								aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							</div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">Python</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-								aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							</div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">Mysql</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-								aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">Burpsuit</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-								aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							</div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">Hydra</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85"
-								aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							</div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">Information Gathering & Analysing</span><span
-								class="value-right">90%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-								aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							</div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3 style="color: #00FF00;"><span class="name-left">NMAP</span><span class="value-right">93%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-								aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width:93%">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<script>
+	window.onscroll = function() {stickyNavbar()};
+	var navbar = document.getElementById("myTopnav");
+	var sticky = navbar.offsetTop;
+	function stickyNavbar() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky");
+	} else {
+		navbar.classList.remove("sticky");
+	}
+	}
+	function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+	}
 
-
-	<div id="fh5co-work" style="background-image: url(https://wallpapercave.com/wp/wp4005879.jpg)" data-stellar-background-ratio="0.5">
-		<div class="container" style="background-color: #000000;">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<h1 style="color:#00FF00;">Projects</h1>
-				</div>
-			</div>
-				<div class="row">
-				    <div class="col-md-3 text-center col-padding animate-box" itemscope itemtype="https://schema.org/CreativeWork">
-				        <a href="https://github.com/official-biswadeb941/Mayabati---Your-Personal-AI-Chef" class="work" style="background-image: url(https://github.com/official-biswadeb941/Mayabati---Your-Personal-AI-Chef/raw/master/static/Image/Bot.jpg);">
-				            <div class="desc">
-				                <h3 itemprop="name">Mayabati - Your AI Chef</h3>
-				                <span itemprop="description">Illustration</span>
-				            </div>
-				        </a>
-				    </div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(Content/images/portfolio-2.jpg);">
-						<div class="desc">
-							<h3>More Interesting Projects Coming in Future.</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(Content/images/portfolio-3.jpg);">
-						<div class="desc">
-							<h3>More Interesting Projects Coming in Future.</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(Content/images/portfolio-4.jpg);">
-						<div class="desc">
-							<h3>More Interesting Projects Coming in Future.</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(Content/images/portfolio-5.jpg);">
-						<div class="desc">
-							<h3>More Interesting Projects Coming in Future.</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(Content/images/portfolio-6.jpg);">
-						<div class="desc">
-							<h3>More Interesting Projects Coming in Future.</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(Content/images/portfolio-7.jpg);">
-						<div class="desc">
-							<h3>More Interesting Projects Coming in Future.</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(Content/images/portfolio-8.jpg);">
-						<div class="desc">
-							<h3>More Interesting Projects Coming in Future.</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-			<div id="fh5co-blog" itemscope itemtype="https://schema.org/ImageGallery" style="background-image: url(https://wallpapercave.com/wp/wp4795301.png);">
-			    <div class="container" style="background-color:#000000;">
-			        <div class="row animate-box">
-			            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-			                <h2 style="color: #00FF00;" itemprop="name">Photo Album</h2>
-			                <p> </p>
-			            </div>
-			        </div>
-			        <div class="row">
-			            <!-- First post -->
-			            <div class="col-md-4">
-			                <div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
-			                    <a href="https://www.facebook.com/official.biswadeb941" class="blog-bg" style="background-image: url(Content/images/ECS.jpg);" itemprop="url"></a>
-			                    <div class="blog-text">
-			                        <span class="posted_on">April. 10th 2024</span>
-			                        <h3 itemprop="headline">Gurunanak Institute of Technology's ECS Department organized a seminar with Prof. Dr. Himadri Nath Saha on Ethical Hacking, offering key insights on cybersecurity measures.</h3>
-			                        <p itemprop="author">Red Teamer</p>
-			                    </div>
-			                </div>
-			            </div>
-			            <!-- Second post -->
-			            <div class="col-md-4">
-			                <div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
-			                    <a href="https://www.facebook.com/official.biswadeb941" class="blog-bg" style="background-image: url(Content/images/Cyber1.jpg);" itemprop="url"></a>
-			                    <div class="blog-text">
-			                        <span class="posted_on">March. 14th 2024</span>
-			                        <h3 itemprop="headline">We the Cyber Cell team with our guest speaker Mr Shuvam Roy.😍🤭 </h3>
-			                        <p itemprop="author">Red Teamer</p>
-			                    </div>
-			                </div>
-			            </div>
-			            <!-- Third post -->
-			            <div class="col-md-4">
-			                <div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/Photograph">
-			                    <a href="https://www.facebook.com/official.biswadeb941" class="blog-bg" style="background-image: url(Content/images/cyber2.jpg);" itemprop="url"></a>
-			                    <div class="blog-text">
-			                        <span class="posted_on">March. 14th 2024</span>
-			                        <h3 itemprop="headline">Joined GNIT Cyber Cell as a Technical Engineer.</h3>
-			                    </div>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-				<div id="fh5co-blog" itemscope itemtype="https://schema.org/Blog" style="background-image: url(https://wallpapercave.com/wp/wp6241750.png);">
-				    <div class="container" style="background-color:#000000;">
-				        <div class="row animate-box">
-				            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-				                <h1 style="color: #00FF00;" itemprop="name">Post on Medium</h1>
-				                <h3 style="color: #00FF00;">My Top 3 Articles</h3>
-				            </div>
-				        </div>
-				        <div class="row">
-				            <!-- First post -->
-				            <div class="col-md-4">
-				                <div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/BlogPosting">
-				                    <a href="https://medium.com/@official-biswadeb941/the-world-of-me-bestie-computer-traveling-fooding-sleeping-04f8a1c58db7" class="blog-bg" style="background-image: url(https://www.wondermind.com/wp-content/uploads/2023/04/How-to-practice-self-love.png?w=960);" itemprop="url"></a>
-				                    <div class="blog-text">
-				                        <span class="posted_on">April. 11th 2024</span>
-				                        <h3 itemprop="headline"><a href="https://medium.com/@official-biswadeb941/the-world-of-me-bestie-computer-traveling-fooding-sleeping-04f8a1c58db7">The World Of ME: Bestie, Computer, Travelling, Fooding, Sleeping.</a></h3>
-				                        <p itemprop="description">Read my Autobiography</p>
-				                        <ul class="stuff">
-				                            <li><a href="https://medium.com/@official-biswadeb941/the-world-of-me-bestie-computer-traveling-fooding-sleeping-04f8a1c58db7">Read More<i class="icon-arrow-right22"></i></a></li>
-				                        </ul>
-				                    </div>
-				                </div>
-				            </div>
-				            <!-- Second post -->
-				            <div class="col-md-4">
-				                <div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/BlogPosting">
-				                    <a href="#" class="blog-bg" style="background-image: url(Content/images/portfolio-2.jpg);" itemprop="url"></a>
-				                    <div class="blog-text">
-				                        <span class="posted_on">Mar. 15th 2016</span>
-				                        <h3 itemprop="headline"><a href="#">More Article are coming.</a></h3>
-				                        <p itemprop="description">More Article are coming.</p>
-				                    </div>
-				                </div>
-				            </div>
-				            <!-- Third post -->
-				            <div class="col-md-4">
-				                <div class="fh5co-blog animate-box" itemscope itemtype="https://schema.org/BlogPosting">
-				                    <a href="#" class="blog-bg" style="background-image: url(Content/images/portfolio-3.jpg);" itemprop="url"></a>
-				                    <div class="blog-text">
-				                        <span class="posted_on">Mar. 15th 2016</span>
-				                        <h3 itemprop="headline"><a href="#">More Article are coming.</a></h3>
-				                        <p itemprop="description">More Article are coming.</p>
-				                    </div>
-				                </div>
-				            </div>
-				        </div>
-				    </div>
-				</div>
-		
-		<div id="fh5co-consult">
-			<div class="video fh5co-video" style="background-image: url(https://images.pexels.com/photos/3794382/pexels-photo-3794382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
-				<div class="overlay"></div>
-			</div>
-			<div class="choose animate-box" style="background-color: #000000;">
-				<h2 style="color: #00FF00;"><b>Contact us</b></h2>
-				<form id="contactForm" method="post">
-					<p style="color: #00FF00;">Fill up the form given below and we will get back to you very soon.</p>
-					<div class="row form-group">
-						<div class="col-md-6" style="color: #00FF00;">
-							<input type="text" id="name" name="name" class="form-control" placeholder="Your Full Name" autocomplete="off" required>
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<div class="col-md-12">
-							<input type="text" id="email" name="email" class="form-control" placeholder="Your Email Address" autocomplete="off" required>
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<div class="col-md-12">
-							<input type="text" id="subject" name="subject" class="form-control" placeholder="Your subject of this message" autocomplete="off" required>
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<div class="col-md-12">
-							<textarea name="message" id="message" name="message" cols="30" rows="10" class="form-control" placeholder="Something which you want to say us" autocomplete="off" required></textarea>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<input type="submit" value="Send Message" class="btn btn-primary">
-					</div>
-					<div id="messageArea" style="color: #fffb00;"></div>
-				</form>
-			</div>
-		</div>
-        
-		<!--
-		<div id="map" class="fh5co-map"></div>
-		</div>
-        -->
-
-		<div class="gototop js-top" >
-			<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-		</div>
-</div>
-
-<script src="Content/js/jquery.min.js"></script>
-<script src="Content/js/jquery.easing.1.3.js"></script>
-<script src="Content/js/bootstrap.min.js"></script>
-<script src="Content/js/jquery.waypoints.min.js"></script>
-<script src="Content/js/jquery.stellar.min.js"></script>
-<script src="Content/js/jquery.easypiechart.min.js"></script>
-<script src="Content/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MLM138KNXE"></script>
-
-<script>
-window.onscroll = function() {stickyNavbar()};
-
-var navbar = document.getElementById("myTopnav");
-var sticky = navbar.offsetTop;
-
-function stickyNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-</script>
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="official.biswadeb941" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-</body>
-
+	</script>
+	</body>
 </html>
