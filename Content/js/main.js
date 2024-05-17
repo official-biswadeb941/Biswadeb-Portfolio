@@ -262,7 +262,7 @@ let currentTextIndex = 0;
 let currentCharIndex = 0;
 
 // Speed of typing in milliseconds
-const typingSpeed = 40; // Adjust speed as needed
+const typingSpeed = 15; // Adjust speed as needed
 
 // Function to simulate typing effect
 function typeText() {
