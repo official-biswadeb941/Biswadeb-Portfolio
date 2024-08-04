@@ -153,7 +153,7 @@
 		var form = document.getElementById("contactForm");
 		var formData = new FormData(form);
 	
-		fetch("https://script.google.com/macros/s/AKfycbw7qvXT-NWu4MRj5hybUHvZmjkVh6RIK1qu46W_BAUfE3Hw_vN2hTvN7K-127_Igl-gtg/exec", {
+		fetch("https://script.google.com/macros/s/AKfycbwcLLTUTj39iKUKYcUAW2vWiPbgeXERIMsuWlAXDmZONXA7IG2Oxejk8gKN_J0LvJsY/exec", {
 			method: "POST",
 			body: formData
 		})
