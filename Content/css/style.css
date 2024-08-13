@@ -96,7 +96,7 @@
     color: var(--primary);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
     .navbar .navbar-nav .nav-link  {
         padding: 10px 0;
     }
