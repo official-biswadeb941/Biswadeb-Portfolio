@@ -428,3 +428,16 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    display: none;
+}
+
+.is-invalid ~ .invalid-feedback {
+    display: block;
+}

@@ -544,7 +544,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="https://media.licdn.com/dms/image/D5603AQHGv-z8HQiS2w/profile-displayphoto-shrink_800_800/0/1710950243146?e=1729123200&v=beta&t=pPnot0et26s6OvD0kqwnen8vLyZXWnPMn4WxU2JHew4" alt="">
+                        <img class="img-fluid rounded" src="Content/images/46.jpg" alt="">
                         <div class="team-text bg-white rounded-end p-4">
                             <div>
                                 <h5>Doeta Das</h5>
@@ -669,38 +669,44 @@
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <p class="mb-4">We’re excited to hear from you! If you have any questions or would like to discuss how we can collaborate, please fill out the form below. We’ll get back to you as soon as possible..</p>
-                    <form id="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbz91jcA-nVjxo0KZyqH63YaXflJrqDaTNYh5F3hjbsov0M8ArrU3cTiZdG3ndVzPJK9/exec">
+                    <p class="mb-4" style="color: red;"><b>We value your feedback and encourage open communication. However, any abusive or vulgar comments will result in being blacklisted from further interaction on our site.</b></p>
+                    <form id="contactForm" method="post" onsubmit="return validateForm()">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" autocomplete="off" required>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" autocomplete="off" required minlength="2" maxlength="50">
                                     <label for="name">Your Name</label>
+                                    <div class="invalid-feedback"><b>Please enter your name (2-50 characters).</b></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" autocomplete="off" required>
                                     <label for="email">Your Email</label>
+                                    <div class="invalid-feedback"><b>Please enter a valid email address.</b></div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" autocomplete="off" required>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" autocomplete="off" required minlength="5" maxlength="100">
                                     <label for="subject">Subject</label>
+                                    <div class="invalid-feedback"><b>Please enter a subject (5-100 characters).</b></div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px" autocomplete="off" required></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px" autocomplete="off" required minlength="10" maxlength="1000"></textarea>
                                     <label for="message">Message</label>
+                                    <div class="invalid-feedback"><b>Please enter a message (10-1000 characters).</b></div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary py-3 px-5" id="submitButton" type="submit">Send Message</button>
                             </div>
                         </div>
                     </form>
                    </div>
+                   <div id="responseMessage" style="text-align: center; font-weight: bold;"></div>
             </div>
         </div>
     </div>
@@ -754,33 +760,7 @@
     <script src="Content/lib/lightbox/js/lightbox.min.js"></script>
     <script src="Content/js/main.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLM138KNXE"></script>
-    <script>
-        $('#spanYear').html(new Date().getFullYear());
-    </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-    
-            const formData = new FormData(this);
-    
-            fetch(this.action, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.text())
-            .then(result => {
-                document.getElementById('responseMessage').innerText = 'Message sent successfully!';
-                document.getElementById('responseMessage').style.color = 'green';
-            })
-            .catch(error => {
-                document.getElementById('responseMessage').innerText = 'An error occurred. Please try again.';
-                document.getElementById('responseMessage').style.color = 'red';
-            });
-        });
-    });
-    </script>
 </body>
 
 </html>
