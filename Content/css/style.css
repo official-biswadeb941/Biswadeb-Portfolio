@@ -206,6 +206,11 @@
     opacity: 1;
 }
 
+.date{
+    color: rgb(134, 184, 27) !important;
+    font-size: 15px;
+    font-weight: 400;
+}
 
 /*** About ***/
 #about .years .display-1 {
