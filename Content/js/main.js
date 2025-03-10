@@ -173,9 +173,3 @@ function validateForm() {
 
     return isValid;
 }
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P6L8PZFKXY');
